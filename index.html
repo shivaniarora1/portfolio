@@ -1,0 +1,560 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shivani Arora</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="Shivani Arora">    
+    <link rel="shortcut icon" href="">  
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head> 
+
+<body>
+   <style>
+    body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background: #f5f5f5;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: #6e3852;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3c1e2c;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.wrapper {
+  background: #A15277;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-wrapper {
+  background: #A15277;
+  position: absolute;
+  right: 0;
+  width: 240px;
+  height: 100%;
+  min-height: 800px;
+  color: #fff;
+}
+
+.sidebar-wrapper a {
+  color: #fff;
+}
+
+.sidebar-wrapper .profile-container {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sidebar-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .profile {
+  margin-bottom: 15px;
+}
+
+.sidebar-wrapper .contact-list .svg-inline--fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.sidebar-wrapper .contact-list li {
+  margin-bottom: 15px;
+}
+
+.sidebar-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .contact-list .email .svg-inline--fa {
+  font-size: 14px;
+}
+
+.sidebar-wrapper .container-block {
+  padding: 30px;
+}
+
+.sidebar-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.sidebar-wrapper .degree {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 15px;
+}
+
+.sidebar-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .education-container .meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.sidebar-wrapper .education-container .time {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.sidebar-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar-wrapper .languages-list {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .languages-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .interests-list {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .interests-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+
+.main-wrapper {
+  background: #fff;
+  padding: 60px;
+  padding-right: 300px;
+}
+
+.main-wrapper .section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #6e3852;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-wrapper .section-title .icon-holder {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #6e3852;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  top: -8px;
+}
+
+.main-wrapper .section-title .icon-holder .svg-inline--fa {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.main-wrapper .section {
+  margin-bottom: 60px;
+}
+
+.main-wrapper .experiences-section .item {
+  margin-bottom: 30px;
+}
+
+.main-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.main-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.main-wrapper .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #97AAC3;
+}
+
+.main-wrapper .company {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
+
+.main-wrapper .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.main-wrapper .projects-section .intro {
+  margin-bottom: 30px;
+}
+
+.main-wrapper .projects-section .item {
+  margin-bottom: 15px;
+}
+
+.skillset .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.skillset .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.skillset .level-bar {
+  height: 12px;
+  background: #f5f5f5;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.skillset .theme-progress-bar {
+  background: #b67091;
+}
+
+.footer {
+  padding: 30px;
+  padding-top: 60px;
+}
+
+.footer .copyright {
+  line-height: 1.6;
+  color: #545E6C;
+  font-size: 13px;
+}
+
+.footer .fa-heart {
+  color: #fb866a;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar-wrapper {
+    position: static;
+    width: inherit;
+  }
+  .main-wrapper {
+    padding: 30px;
+  }
+  .main-wrapper .time {
+    position: static;
+    display: block;
+    margin-top: 5px;
+  }
+  .main-wrapper .upper-row {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .skillset .level-title {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+       img{
+           max-height: 250px;
+           max-width: 150px
+       }
+     </style>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="./0.jpg" alt="" />
+                <h1 class="name">Shivani Arora</h1>
+                <h3 class="tagline">Quality Analyst and Assurance</h3>
+            </div><!--//profile-container-->
+            
+
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+            
+                <div class="item">
+                    <h4 class="degree">Master of Computer Applications</h4>
+                    <h5 class="meta">Bharati Vidyapeeth's College of Engineering</h5>
+                    <div class="time">2015 - 2018</div>
+                </div><!--//item-->
+          
+             
+            
+                <div class="item">
+                    <h4 class="degree">Bachelor of Computer Applications</h4>
+                    <h5 class="meta">Bharati Vidyapeeth's College of Engineering</h5>
+                    <div class="time">2012 - 2015</div>
+                </div><!--//item-->
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>English <span class="lang-desc"></span></li>
+                </ul>
+            </div><!--//interests-->
+            
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Music</li>
+                    <li>Sports</li>
+
+                </ul>
+            </div><!--//interests-->
+            
+        </div><!--//sidebar-wrapper-->
+        
+        <div class="main-wrapper">
+            
+            <section class="section summary-section">
+                <h2 class="section-title"><i class="fas fa-user"></i>Career Profile</h2>
+                <div class="summary">
+                    <p>I have 2.5 years of experience of Administration Department in School, 1.5 years of experience in IT Industry in Corporate Sector.
+
+Core Skills are TESTING with Manual and Automation testing tools, Quality Assurance, Software testing,  DBMS,  HTML, SQL Server, Sharepoint. I am looking out for the environment full of responsibilities and challenges that would develop my creativity and help me to excel in my field of knowledge and work.  
+</p>
+                </div><!--//summary-->
+            </section><!--//section-->
+            
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i>Experiences</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Administrator</h3>
+                            <div class="time">2017 - Present</div>
+                        </div><!--//upper-row-->
+                        <div class="company">St. Froebel Sr. Sec. School </div>
+                    </div><!--//meta-->
+                    <div class="details">
+                      •	Work in maintaining and updation of the school website which is designed on Dotnet and SQL Server. 	<br>
+•	Preparing confidential and important letters, mails and other information made between school and education department. Checking important circulars and mails from Department of Education (DOE).<br>
+•	Maintaining and handling of the databases of the school students and staff records. Handling of the software used for the parents students login and communication. Updation of important documents and activities on day to day basis.<br>
+•	Transport Coordinator Incharge for the managing and maintain school transport records and processing of the school buses.<br>
+•	Preparing of confidential paper and reports for the school which are used for communication between the school and government education departments. <br>
+•	Filing and keeping records of all the staff and students personal records file.<br>
+•	Event management Incharge for the cultural programs and events held in the school. <br>
+
+
+                        </div><!--//details-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Quality Analyst </h3>
+                            <div class="time">September 2016 to Feburary 2017.</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Briston Technomach Pvt. Ltd</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                       •	Working on My SQL Server database for updating and verifying the clients information. Updation of the Clients records their information and services.<br> 
+•	As the company deals in fuel level calibration mointoring service continues checking the fuel level graph of all the clients and inserting their fuel level for client updation.   <br>
+•	Analyze and review test sequence and scope on basis of test results in product design.<br>
+•	Support technical support staff and Application Developers to identify and resolve defects.<br>
+•	Evaluate large data amounts from different sources and develop useful summary reports.<br>
+•	Identify needed data sources working with data owners of storehouse.<br>
+•	The Excel reports of every clients is developed which provide them witth their daily data updates.<br>
+
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Content Quality Analyst</h3>
+                            <div class="time">August 2015 to August 2016</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Ernst & Young </div>
+                    </div><!--//meta-->
+                    <div class="details">
+                       •	Redaction project (sanitization) – Sanitization process involved basically the redaction of the files and data of one client document which are either in non-editable or editable format and removing client confidential information as per the point criteria which is being mentioned in the standards so as to retain the confidentiality of the one client from another.<br>
+•	Creating of the Share points sites, lists and views as per the project requirements. Editing and publishing of the right documents in the content repository as and when required for updation by using the manual test cases and scripting techniques and publishing data in a way that it can be reused by multiple clients. <br>
+•	Interact with various resources at workspace like business, development as well as analyst teams. Implement test scripts, record actual results and identify defects. Provide hands-on experience and interpret automated test script preparation and execution.<br>
+•	Community home space (CHS) – CHS is the online portal of company where all the events and new updates which are related to client is done their so before publishing the content it was being manually tested so as to check whether all content and links are working properly.<br>
+•	ATLAS – Atlas is a tool used to create test plan for various departments which defines their work flow and work cycle. In QA we check for the content as per the standards by meeting all the points mentioned in the checklists.<br>
+
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+            </section><!--//section-->
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fas fa-archive"></i>Projects</h2>
+                <div class="intro">
+                </div><!--//intro-->
+                <div class="item">
+                    <span class="project-title"><a href="https://Shivani1011.github.io/iExchange">Apron Management System</a><br></span> - <span class="project-tagline">                      Description       :  Worked on designing the demo website for live project for Chennai airport to see the movement of the aircrafts, types of aircrafts and handling of the apron are of the airport. A sample apron was being created containing different types and size of aircraft and controlling their movements to and fro the airport depending upon various criteria.<br>
+                      Technology Used     :  Netbeans , Java  and MySQL Server               
+</span>
+                    
+                </div><!--//item-->
+              
+            </section><!--//section-->
+            
+              <section class="section projects-section">
+                <h2 class="section-title"><i class="fas fa-archive"></i>  TECHNICAL COURSES	</h2>
+                <div class="intro">
+                </div><!--//intro-->
+                <div class="item">
+                    <span class="project-title"><a href="https://Shivani1011.github.io/iExchange"></a></span> - <span class="project-tagline">•	Currently learning and practicing on the Automation testing tools SELENIUM from Brain Mentors Institute since June 2019.<br>
+•	Worked as an Intern at Airport Authority of India on project named “Apron Management” from June to August 2014 – 3 months Training<br>
+•	Core Java training from HCL Technologies southex from June to July 2014 – 2 months training.<br>
+•	Dotnet certification from High Technology solution - IBM certified based(dot.net) from July to August 2013 - 2 months training.<br>
+•	Worked as Senior Head Intern in WECHAT application training program from December to January 2013 – 1 month training.
+</span>
+                    
+                </div><!--//item-->
+              
+            </section><!--//section-->
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fas fa-rocket"></i>Skills &amp; Proficiency</h2>
+                <div class="skillset">        
+                    <!-- <div class="item">
+                        <h3 class="level-title">Python &amp; Django</h3>
+                        <div class="progress level-bar">
+						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>                               
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Selenium </h3>
+                        <div class="progress level-bar">
+						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+						     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+						</div>                              
+                    </div><!--//item-->
+                    
+             
+                    
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS</h3>
+                        <div class="progress level-bar">
+							    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+							        
+							    </div>
+							    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+						</div>                                
+                    </div><!--//item-->
+                    
+
+                    <div class="item">
+                        <h3 class="level-title">Javascript</h3>
+                        <div class="progress level-bar">
+						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+						     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+						</div>                                 
+                    </div><!--//item-->
+                    
+                </div>  
+            </section><!--//skills-section-->
+            
+        </div><!--//main-body-->
+    </div>
+ 
+    <footer class="footer">
+        <div class="text-center">
+    <link rel="stylesheet" href="/index.css">
+        </div><!--//container-->
+    </footer><!--//footer-->
+        
+</body>
+</html> 
